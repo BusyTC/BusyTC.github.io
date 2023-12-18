@@ -114,7 +114,7 @@ header {
             font-size: initial;
         }
     }
-    nav {
+    > nav {
         display: flex;
         align-items: center;
         width: 100%;
@@ -200,7 +200,13 @@ footer{
         }
     }
     header {
-        h1 {
+        > nav {
+            > a {
+                padding: 13px 0px 13px 0px !important;
+            }
+        }
+
+        > h1 {
             white-space: inherit !important;
         }
         > label {
@@ -215,7 +221,7 @@ footer{
         > input:checked {
             ~ nav {
                 visibility: visible;
-                opacity: 0.8;
+                opacity: 0.9;
             }
             + label::before {
                 transform: rotate(90deg);
@@ -1512,7 +1518,7 @@ main {
 
 
 #modern_consoles {
-    img {
+    > img {
         width: 100%;
         box-shadow: 5px 5px 10px black;
         border-radius: 16px;
@@ -1537,7 +1543,7 @@ main {
         display: flex;
         justify-content: center;
 
-        img {
+        > img {
             width: 80%;
             box-shadow: 5px 5px 10px black;
             border-radius: 16px;
@@ -1555,7 +1561,7 @@ main {
         display: flex;
         justify-content: center;
 
-        img {
+        > img {
             width: 80%;
             box-shadow: 5px 5px 10px black;
             border-radius: 16px;
@@ -1573,7 +1579,7 @@ main {
     }
 
     .characteristics_img {
-        img {
+        > img {
             max-width: 50vw;
             box-shadow: 5px 5px 10px black;
             border-radius: 16px;
@@ -1616,7 +1622,7 @@ main {
 
 #info_SD {
     > div {
-        img {
+        > img {
             width: 256px;;
             float: right;
         }
@@ -1630,7 +1636,7 @@ body {
 }
 
 .characteristics_img {
-    img {
+    > img {
         max-width: 50vw;
         box-shadow: 5px 5px 10px black;
         border-radius: 16px;
@@ -1651,7 +1657,7 @@ body {
     }
 
     .characteristics_img {
-        img {
+        > img {
             max-width: 50vw;
             box-shadow: 5px 5px 10px black;
             border-radius: 16px;
@@ -1667,7 +1673,7 @@ body {
         .characteristics_img {
             justify-self: center;
 
-            img {
+            > img {
                 max-width: 70vw;
                 justify-self: center;
             }
@@ -1712,8 +1718,8 @@ body {
         }
     }
 
-    img {
-        max-width: calc(100vw - 32px);
+    > img {
+        max-width: 100%;
         border-radius: 16px;
     }
 }
@@ -1724,7 +1730,7 @@ body {
     background-color: rgb(255, 255, 255, 0.7);
 
     > div {
-        img {
+        > img {
             width: 128px;;
             float: right;
             box-shadow: black;
