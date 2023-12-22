@@ -206,9 +206,12 @@ footer{
             }
         }
 
-        > h1 {
-            white-space: inherit !important;
+        > div {
+            > h1 {
+                white-space: normal !important;
+            }
         }
+
         > label {
             cursor: pointer;
             margin-left: auto;
