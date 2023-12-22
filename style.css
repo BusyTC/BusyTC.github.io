@@ -1012,7 +1012,6 @@ section {
     > div {
         position: relative;
         width: 250px;
-        height: 20rem;
         border-radius: 20px;
         display: flex;
         flex-flow: column nowrap;
